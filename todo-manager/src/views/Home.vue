@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <div class="home">
+    <h1 class="green">This is a home page</h1>    
+    <v-btn class="hidden-md-and-down pink dark">I love it</v-btn>
+    <v-btn class="green red--text">Click Me</v-btn>      
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
 
   export default {
     name: 'Home',
 
-    components: {
-      HelloWorld,
-    },
   }
 </script>

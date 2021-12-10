@@ -1,6 +1,7 @@
 <template>
   <nav>
     <v-toolbar flat app>
+      <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase grey--text">
         <span class="font-weight-light">
           Todo-Ninja
@@ -12,6 +13,11 @@
         <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>
     </v-toolbar>
+    
+    <v-navigation-drawer v-model="drawer" app class="indigo">
+      <p>Test</p>
+
+    </v-navigation-drawer>
   </nav>
 </template>
 
@@ -20,7 +26,7 @@
     name: 'NavBar',
     data() {
       return {
-
+        drawer: false
       }
     }
   }
